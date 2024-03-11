@@ -1,0 +1,22 @@
+.hidden{
+  display: hidden;
+}
+
+section#colophon {
+  position: relative;
+  float-reference: page;
+  float: bottom;
+  margin-bottom: 0;
+
+  h2 {
+    text-align: center;
+  
+    border-bottom: none;
+    &:before{
+      background-image: none;
+      background-size: none;
+      background-repeat: none;
+      content: "";
+    }
+  }
+}

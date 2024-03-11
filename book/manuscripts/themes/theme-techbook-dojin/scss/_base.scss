@@ -1,0 +1,291 @@
+:root {
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: 2.2rem;
+  counter-reset: h2;
+  border-bottom: 2px solid $color_black_dark;
+
+  &:before {
+    background-image: url('images/scroll.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "\00A0\00A0\00A0\00A0";
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  counter-increment: h2;
+  counter-reset: h3;
+  border-bottom: 1px solid $color_black_dark;
+
+  &:before {
+    background-image: url('images/fire.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "\00A0\00A0\00A0\00A0" counter(h2) "\00A0";
+  }
+}
+
+h3 {
+  font-size: 1.8rem;
+  counter-increment: h3;
+  border-bottom: 1px solid $color_black_dark;
+
+  &:before {
+    background-image: url('images/axe.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "\00A0\00A0\00A0\00A0" counter(h2) "." counter(h3) "\00A0";
+  }
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: $color_blue;
+}
+
+a:visited {
+  color: $color_purple;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: $color_red;
+}
+
+p {
+  font-feature-settings: 'calt';
+  text-align: justify;
+}
+
+pre {
+  margin: 1.5rem 0;
+  box-decoration-break: clone;
+}
+
+li {
+  p {
+    margin: 0px;
+  }
+}
+
+ul,
+ol {
+  padding-inline-start: 1.5em;
+}
+
+figure {
+  margin: 1.5rem auto;
+  text-align: center;
+  img {
+    max-width: 100%;
+    margin: 0.5rem auto;
+  }
+  figcaption {
+    margin: 0rem;
+    width: 100%;
+    font-size: 90%;
+    break-inside: avoid;
+    text-align: left;
+    background-color: #bfbfbf;
+    border-radius: 1rem 1rem 0 0 !important;
+    padding: 0.5rem 0;
+
+    &::before{
+      margin-left: 1rem;
+      content: "";
+    }
+  }
+  img[src$='.png'],
+  img[src$='.jpg'],
+  img[src$='.jpeg'],
+  img[src$='.gif'],
+  img[src$='.webp'] {
+    image-resolution: 200dpi;
+  }
+}
+
+img + figcaption {
+  all: initial;
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+}
+
+// テーブルの基本スタイル
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+// ヘッダー行のスタイル
+table thead {
+  background-color: #e0f7fa; // 薄い青色
+  
+  th {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    word-break: keep-all;
+  }
+}
+
+// データ行のスタイル
+table tbody {
+  tr {
+    // 奇数行に色を付ける
+    &:nth-child(odd) {
+      background-color: #f1f8fc; // もっと薄い青色
+    }
+
+    td {
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+  }
+}
+
+blockquote {
+  margin: 1.5rem 0.5rem;
+  background-color: $color_silver;
+  padding: 0.5em 1em;
+  border-radius: 0.2rem;
+  :not(pre) > code {
+    padding: 0;
+    word-break: break-all;
+  }
+}
+.page-break {
+  page-break-after: always !important;
+}
+
+%info-style {
+  margin: 1rem 0rem;
+  padding: 10px;
+  border-radius: 1rem;
+
+  &::before {
+    display: block;
+    margin-bottom: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.warning {
+  @extend %info-style;
+  border-left: 3px solid $color_red;
+
+  &::before {
+    background-image: url('images/warning.png');
+    content: "\00A0\00A0\00A0\00A0\00A0 WARNING!";
+  }
+}
+
+.info {
+  @extend %info-style;
+  border-left: 3px solid $color_blue_dark;
+
+  &::before {
+    background-image: url('images/information.png');
+    content: "\00A0\00A0\00A0\00A0\00A0\00A0 INFO";
+  }
+}
+
+.memo {
+  @extend %info-style;
+  border-left: 3px solid $color_green_dark;
+
+  &::before {
+    background-image: url('images/memo.png');
+    content: "\00A0\00A0\00A0\00A0\00A0\00A0 余白メモ";
+  }
+}
+
+ /* hrで改ページ */
+ hr.page-wrap {
+  break-before: page;
+  visibility: hidden;
+  margin: 0px;
+  padding: 0px;
+  height: 1px;
+}
+
+/* チャット */
+.message-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message-block {
+  display: flex;
+  margin: 5px;
+  width: 100%;
+}
+
+.user-avatar {
+  width: 75px;
+  height: fit-content;
+  border-radius: 50%;
+}
+
+.message-bubble {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0px 10px;
+  position: relative;
+  height: fit-content;
+  width: inherit;
+}
+
+.message-bubble p{
+  word-break: break-all;
+  margin: 0px;
+}
+
+/* 矢印の追加 */
+.message-bubble::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+}
+
+.message-left {
+  justify-content: flex-start;
+}
+
+.message-right {
+  justify-content: flex-end;
+}
+
+.message-left .message-bubble {
+  background-color: #e6e4e4;
+}
+.message-right .message-bubble {
+  background-color: #badbff;
+}
+
+/* 左側矢印 */
+.message-left .message-bubble::after {
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #e6e4e4 transparent transparent;
+  left: -10px;
+  top: 10px;
+}
+/* 右側矢印 */
+.message-right .message-bubble::after {
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #badbff;
+  right: -10px;
+  top: 10px;
+}

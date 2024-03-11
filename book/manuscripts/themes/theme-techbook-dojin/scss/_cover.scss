@@ -1,0 +1,21 @@
+.cover h1 {
+  text-align: center;
+
+  border-bottom: none;
+  &:before{
+    background-image: none;
+    background-size: none;
+    background-repeat: none;
+    content: "";
+  }
+}
+
+.author{
+  bottom: 0px;
+  position: absolute;
+}
+
+.subtitle{
+  font-size: 2rem;
+  text-align-last: center;
+}

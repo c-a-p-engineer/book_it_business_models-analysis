@@ -10,7 +10,7 @@ h1 {
   border-bottom: 2px solid $color_black_dark;
 
   &:before {
-    background-image: url('images/scroll.png');
+    background-image: url('images/bill_bag.png');
     background-size: contain;
     background-repeat: no-repeat;
     content: "\00A0\00A0\00A0\00A0";
@@ -24,7 +24,7 @@ h2 {
   border-bottom: 1px solid $color_black_dark;
 
   &:before {
-    background-image: url('images/fire.png');
+    background-image: url('images/bill.png');
     background-size: contain;
     background-repeat: no-repeat;
     content: "\00A0\00A0\00A0\00A0" counter(h2) "\00A0";
@@ -37,7 +37,7 @@ h3 {
   border-bottom: 1px solid $color_black_dark;
 
   &:before {
-    background-image: url('images/axe.png');
+    background-image: url('images/coin.png');
     background-size: contain;
     background-repeat: no-repeat;
     content: "\00A0\00A0\00A0\00A0" counter(h2) "." counter(h3) "\00A0";

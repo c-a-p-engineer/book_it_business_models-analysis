@@ -1,14 +1,14 @@
-# Exception Report<br>～IT業界例外生物報告書～ {.cover}
+# エンジニアが知るべき<br>～IT業界の収益モデル～ {.cover}
 
 <div class="subtitle">
 
-![Exception Report IT業界例外生物報告書](./images/cover/cover.png){width=30%}
+![エンジニアが知るべき～IT業界の収益モデル～](./images/cover/money.webp){width=30%}
 
 </div>
 
 <div class="author">
 
-- 2023年11月01日&nbsp;初版発行
+- 2024年05月01日&nbsp;初版発行
 - サークル&nbsp;こぴみずむ
 
 ![こぴみずむ](./images/cover/circle.jpg){width=20%}

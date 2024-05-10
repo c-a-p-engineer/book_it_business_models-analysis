@@ -1,20 +1,20 @@
 module.exports = {
-  title: "Exception Report 〜IT 業界例外生物報告書〜", // populated into `publication.json`, default to `title` of the first entry or `name` in `package.json`.
+  title: "エンジニアが知るべき ～IT業界の収益モデル～", // populated into `publication.json`, default to `title` of the first entry or `name` in `package.json`.
   author: "こぴぺたん <c_a_p_engineer>", // default to `author` in `package.json` or undefined.
   language: "ja", // default to undefined.
   size: "JIS-B5", // paper size.
   // @vivliostyle/theme-bunko
   theme: "manuscripts/themes/theme-techbook-dojin", // .css or local dir or npm package. default to undefined.
   entry: [
-    // 'sample.md',
-    'cover.md',
-    'toc.md',
-    'preface.md',
-    '00.md',
+    'sample.md',
+    'cover.md', // 表紙
+    'toc.md', // 目次
+    'preface.md', // まえがき
+    '00.md',  // 序章
     '01.md',
     '02.md',
     '03.md',
-    'colophon.md',
+    'colophon.md', // 奥付
     // {
     //   path: 'epigraph.md',
     //   title: 'Epigraph', // title can be overwritten (entry > file),

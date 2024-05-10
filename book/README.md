@@ -1,6 +1,4 @@
-# 自動化の魔法
-
-研修を自動化した話
+# エンジニアが知るべき ～IT業界の収益モデル～
 
 > created by [create-book](https://github.com/vivliostyle/create-book).
 

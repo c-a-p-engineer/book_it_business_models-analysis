@@ -2,12 +2,12 @@
 
 <section id="colophon" role="doc-colophon">
 
-## Exception Report<br>～IT業界例外生物報告書～
+## エンジニアが知るべき<br>～IT業界の収益モデル～
 
 ---
 
 
-- 2023年11月01日&nbsp;初版発行
+- 2024年05月01日&nbsp;初版発行
 - サークル&nbsp;こぴみずむ
 
 ![こぴみずむ](./images/cover/circle.jpg){width=20%}

@@ -159,7 +159,7 @@ h1 {
   border-bottom: 2px solid #2c3e50;
 }
 h1:before {
-  background-image: url("images/scroll.png");
+  background-image: url("images/bill_bag.png");
   background-size: contain;
   background-repeat: no-repeat;
   content: "    ";
@@ -172,7 +172,7 @@ h2 {
   border-bottom: 1px solid #2c3e50;
 }
 h2:before {
-  background-image: url("images/fire.png");
+  background-image: url("images/bill.png");
   background-size: contain;
   background-repeat: no-repeat;
   content: "    " counter(h2) " ";
@@ -184,7 +184,7 @@ h3 {
   border-bottom: 1px solid #2c3e50;
 }
 h3:before {
-  background-image: url("images/axe.png");
+  background-image: url("images/coin.png");
   background-size: contain;
   background-repeat: no-repeat;
   content: "    " counter(h2) "." counter(h3) " ";

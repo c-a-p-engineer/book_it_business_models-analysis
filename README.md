@@ -1,5 +1,7 @@
 # 技術書典16
 
+エンジニアが知るべき<br>～IT業界の収益モデル～
+
 ## 前提条件
 
 - Dockerがインストールされている
@@ -94,3 +96,4 @@ node ./scripts/head2toc.js && npm run build:sass && vivliostyle build --no-sandb
 ## その他
 
 - カスタマイズが必要な場合は、`.devcontainer/devcontainer.json` または `.devcontainer/Dockerfile` を編集してください。
+- [Mermaid Live Editor](https://mermaid.live/)

@@ -6,7 +6,7 @@ module.exports = {
   // @vivliostyle/theme-bunko
   theme: "manuscripts/themes/theme-techbook-dojin", // .css or local dir or npm package. default to undefined.
   entry: [
-    'sample.md',
+    // 'sample.md',
     'cover.md', // 表紙
     'toc.md', // 目次
     'preface.md', // まえがき
@@ -14,6 +14,10 @@ module.exports = {
     '01.md',
     '02.md',
     '03.md',
+    '04.md',
+    '05.md',
+    '06.md',
+    '07.md',
     'colophon.md', // 奥付
     // {
     //   path: 'epigraph.md',

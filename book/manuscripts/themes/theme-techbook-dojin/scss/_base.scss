@@ -151,6 +151,10 @@ table tbody {
     td {
       padding: 5px;
       border: 1px solid #ccc;
+
+      &:first-child {
+        word-break: keep-all;
+      }
     }
   }
 }

@@ -8,7 +8,7 @@
 
 <div class="author">
 
-- 2024年05月01日&nbsp;初版発行
+- 2024年05月25日&nbsp;初版発行
 - サークル&nbsp;こぴみずむ
 
 ![こぴみずむ](./images/cover/circle.jpg){width=20%}
